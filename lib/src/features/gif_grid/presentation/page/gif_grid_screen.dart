@@ -79,7 +79,7 @@ class AnimationCard extends StatefulWidget {
 }
 
 class _AnimationCardState extends State<AnimationCard>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   late final AnimationController _controller;
   late final Animation<double> _animation;
 
@@ -102,6 +102,7 @@ class _AnimationCardState extends State<AnimationCard>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return AnimatedBuilder(
       animation: _animation,
       builder: (context, child) {
@@ -137,4 +138,7 @@ class _AnimationCardState extends State<AnimationCard>
       ),
     );
   }
+  
+  @override
+  bool get wantKeepAlive => true;
 }
