@@ -15,7 +15,6 @@ class IGifDatasource implements GifDatasource {
       final response = await http.get(Uri.parse(apiUrl));
 
       if (response.statusCode == 200) {
-        print(response.body);
         return jsonDecode(response.body);
       } else {
         throw Exception('Error en la petición: ${response.statusCode}');
