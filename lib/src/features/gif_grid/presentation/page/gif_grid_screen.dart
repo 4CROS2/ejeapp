@@ -24,6 +24,12 @@ class _GifGridScreenState extends State<GifGridScreen> {
           builder: (BuildContext context, GifGridState state) {
             return AnimatedSwitcher(
               duration: Duration(milliseconds: 400),
+              transitionBuilder: (child, animation) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: child,
+                );
+              },
               child: switch (state) {
                 ErrorGift _ => Center(
                   child: Text(
