@@ -99,6 +99,7 @@ class _AnimationCardState extends State<AnimationCard>
     _controller.dispose();
     super.dispose();
   }
+  
 
   @override
   Widget build(BuildContext context) {
