@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670952889394",
+    "project_id": "photoapp-a4f6b",
+    "storage_bucket": "photoapp-a4f6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670952889394:android:14cdc682c31e624d88702b",
+        "android_client_info": {
+          "package_name": "com.example.ejeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFItzTxdEcJCVwgqVU66OotvORMxukGzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
